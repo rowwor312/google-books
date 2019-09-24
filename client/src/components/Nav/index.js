@@ -2,7 +2,7 @@ import React from "react";
 
 function Nav() {
     return (
-        <nav className="navbar navbar-expand-lg navbar-primary bg-primary">
+        <nav className="navbar navbar-expand-lg navbar-primary bg-dark">
             <a className="navbar-brand" href="/">
                 <h2 className="text-white">Google Book Search</h2>
             </a>
@@ -16,7 +16,9 @@ function Nav() {
                     </li>
                 </ul>
             </div>
+            
         </nav>
+        
     );
 }
 

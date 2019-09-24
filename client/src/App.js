@@ -4,7 +4,7 @@ import SaveBooks from "./pages/SaveBooks";
 import SearchBooks from "./pages/SearchBooks";
 import NoMatch from "./pages/NoMatch";
 import Nav from "./components/Nav";
-import Footer from "./components/Footer"
+// import Footer from "./components/Footer"
 import "./App.css"
 
 
@@ -12,14 +12,16 @@ function App() {
   return (
     <Router>
       <div>
+        <div>
         <Nav />
+        </div>
         <Switch>
           <Route exact path="/" component={SearchBooks} />
           <Route exact path="/saved" component={SaveBooks} />
           <Route exact path="/saved/:id" component={SaveBooks} />
           <Route component={NoMatch} /> 
         </Switch>
-        <Footer />
+        {/* <Footer /> */}
       </div>
     </Router>
   );
